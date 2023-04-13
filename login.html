@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Styles/signup.css">
+  </head>
+<body>
+	<section class="heading">
+			<nav class="navLinks"> 
+				<a href=""><img class="logo" src="" alt="Logo"></a>
+				    <div class="nav-links">
+					  <ul class="MenuItem">
+						 <li> <a href="index.html">Home</a> </li>
+						 <li> <a href="centers.html">Centers</a> </li> 
+						 <li> <a href="#">Login</a> </li>
+						 <!-- <li> <a href="about.html">About</a> </li> -->
+						 <!-- <li> <a href="appoint.html">Appointments</a> </li> -->
+					 </ul>
+					 </div>
+			</nav>
+	<center>
+ <div class="container right-panel-active">
+    	<!-- Sign In -->
+	 <div class="container__form container--signin">
+		<form name="myform" action="PHP/Authentication/login.php" class="form login" id="form2" method="post">
+			<h2 class="form__title">Login</h2>
+			<input type="email" placeholder="Email" class="input" name="mail"/>
+			<div id="emailnote"></div>
+			<input type="password" placeholder="Password" class="input" name="password" />
+			<div id="passnote"></div>
+			<a href="#" class="link">Forgot your password?</a>
+			<a href="doctor/signup.php
+			" class="link">Are you a Doctor?</a>
+			<input type="submit" class="btn" id="btn1" value="Login" name="submit">
+		</form>
+	</div>
+	
+	<!-- Sign Up -->
+	<div class="container__form container--signup">
+		<form action="PHP/registration.php" class="form" id="form1" method="post">		
+			<h2 class="form__title">Sign Up</h2>
+			<input type="text" placeholder="First name" class="input" name="fname" required/>
+			<input type="text" placeholder="Last name" class="input" name="lname"/>
+			<input type="text" placeholder="Location" class="input" name="location"/>
+			<input type="email" placeholder="Email" class="input" name="email" required/>
+            <input type="tel" placeholder="Phone" class="input" name="phone" required/>
+			<input type="password" placeholder="Password" class="input" name="pass1" required/>
+			<div id="letpass"></div>
+            <input type="password" placeholder="Confirm Password" class="input" name="pass2"/>
+			<div id="samepass"></div>
+			<input type="submit" class="btn" id="btn2" value="Register" name="submit">
+		</form>
+	</div>
+	
+	<!-- Overlay -->
+	<div class="container__overlay">
+		<div class="overlay">
+			<div class="overlay__panel overlay--left">
+				<h1>Hello there!</h1>
+				<p>Enter your personal info to <br> join and begin your journey with us</p>
+				<button class="btn" id="signUp">Sign Up</button>
+			</div>
+			<div class="overlay__panel overlay--right">
+				<h1>Welcome back!</h1>
+				<p>To stay connected with us, <br> please login with your personal info</p>
+				<button class="btn" id="signIn">Login</button>
+			</div>
+		</div>
+	</div>
+</div>
+</center>
+
+</section>
+<script src="Scripts/login.js"></script>
+</body>
+</html>

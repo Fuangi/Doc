@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    input, textarea{
+        text-align: center;
+        display: block;
+        margin: 30px auto;
+    }
+    input{
+        height: 20px;
+    }
+    label{
+        display: block;
+        text-align: center;
+        margin: 20px auto;
+    }
+    button{
+        margin: 20px auto;
+        text-align: center;
+        padding: 10px;
+        display: block;
+    }
+    #submit{
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+<body>
+    <form action="PHP/testing.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" name ="name">
+        <label for="email">Email</label>
+        <input type="email" name="email">
+        <textarea name="message" id="message" cols="30" rows="10">Your message...</textarea>
+        <button>Get newsletter</button>
+        <input type="submit" value="submit" id="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,272 @@
+/* the header and basics are in the defaults stylesheet */
+body{
+    overflow-x: hidden;
+}
+/* 3a97d4. try this color sometime */
+.welcome{
+    background-color: rgba(0, 0, 0, 30%);
+    width: 550px;
+    height: 300px;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+    margin: 250px auto;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px #333;   
+}
+.welcome h1{
+    text-align: center;
+    width: 450px;
+    font-size: 40px;
+}
+.welcome p{
+    width: 450px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.know{
+    margin: 40px 20px 20px 50px;
+    text-align: center;
+    display: inline;
+    /* margin-top: 50px; */
+}
+.more{
+    background-color: rgb(2, 13, 22);
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    display: inline;
+}
+.join{
+    text-decoration: none;
+    color: white;
+    /* border: 1px solid #000; */
+    border-radius: 25px;
+    padding: 10px 25px;
+    display: inline;
+}
+.more:hover, .join:hover{
+opacity: 0.7;
+}
+
+ 
+/*SERVICES AND COMPONENTS */
+
+.services{
+    margin: 80px auto;
+    padding: 1rem;
+    margin-bottom: 50px;
+}
+.services h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 300;
+}
+.services h4, .services h3{
+    text-align: center;
+    width: 50%;
+    margin: 1px auto;
+    font-weight: lighter;
+}
+.services h3{
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
+.users{
+    margin: 50px 0;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.users h3{
+    font-size: 35px;
+    text-align: center;
+}
+.users p{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.users li{
+    list-style: circle; 
+    padding: 3px;
+    text-align: center;
+} 
+.users div{
+    text-align: center;
+    width: 25%;
+}
+.users div img{
+    margin: 10px auto;
+}
+.patients, .doctors{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px auto;
+    background: rgb(58, 151, 212, 0.1);
+    columns: 4 200px;
+}
+
+.patients li{
+    /* margin-left: 40px; */
+    font-size: 14px;
+}
+li::marker{  /* to style the marker, (bullets) of the list */
+    font-family: cursive;
+    color: rgba(38, 147, 241, 1);
+}
+.doctors{
+    clear: both;
+}
+.users div:hover{
+    background: rgb(100, 151, 212, 0.11);
+    transition: 1s;
+}
+/* Little information about services */
+
+.little-information{
+    clear: both;  /* To push it below floated items on both sides*/
+    margin: 10px auto;
+    margin-top: 10px;
+    text-align: center;
+    padding: 2rem; 
+    margin-bottom: 15px;
+    width: 1000px;
+}
+.little-information h3{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.nice-middle{
+    width: 1000px;
+    columns: 3 200px;
+    margin: 30px auto;
+    box-shadow: 2px 2px 10px rgb(167, 165, 165);
+    border-radius: 20px;
+    padding: 20px;
+}
+.little-information a{
+    margin: 30px;
+    text-decoration: none;
+    color: rgb(19, 20, 20);
+    padding: 13px;
+    color: #fff;
+    border-radius: 40px;
+    background: rgba(38, 147, 241, 0.9);
+}
+.little-information a:hover{
+    background: rgba(38, 147, 241, 0.8);
+}
+
+/* Footer styling */
+
+footer{
+    background-color: rgba(0, 0, 0, 0.726);
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+footer p, footer h4{
+    color: #fff;
+}
+footer h4{
+    font-size: 20px;
+    text-align: center;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 600px) {
+    .header{
+        width: 100%;
+        background-size: cover;
+    }
+    .welcome{
+        width: 100%;
+        text-align: left;
+        padding: 20px;
+        background: transparent;
+        color: #000;
+        height: 250px;
+    }
+    .welcome h1{
+        font-size: 30px;
+        width: 100%;
+    }
+    .welcome p{
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+    .more, .join{
+        font-size: 16px;
+        padding: 10px 15px;
+        background: rgba(38, 147, 241, 0.9);
+    }
+    .nav-links{
+        width: 100%;
+    }
+    .services{
+        margin: 80px 20px;
+        width: 100%;
+    }
+    .services h4{
+        /* border: 1px solid #333; */
+        width: 100%;
+        padding: 1px;
+    }
+    .users{
+        display: block;
+        /* border: 1px solid #333; */
+        margin: 30px auto;
+        padding: 5px;
+        margin-bottom: 0;
+    }
+    .patients img{
+        width: 98%;
+        margin-top: 35px;
+    }
+    .patients dl{
+        float: none;
+        text-align: left;
+        width: 100%;
+        margin: 30px 0;
+    }
+    .patients li{
+        margin-left: 10px;
+    }
+    .doctors li{
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .little-information{
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+    .little-information h3{
+        font-size: 25px;
+    }
+    .little-information p{
+        font-size: 15px;
+    }
+    .little-information a{
+        font-size: 15px;
+        padding: 10px;
+        display: block;
+    }
+    .contact{
+        /* columns: 1; */
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+}

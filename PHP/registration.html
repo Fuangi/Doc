@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trying something</title>
+    <link rel="stylesheet" href="../Styles/signup.css">
+</head>
+<body>
+    <div class="container__form container--signup">
+		<form name="f1" action="registration.php" class="form" id="form1" method="post">
+			<h2 class="form__title">Sign Up</h2>
+			<input type="text" placeholder="First name" class="input" name="fname" required/>
+			<input type="text" placeholder="Last name" class="input" name="lname"/>
+			<input type="email" placeholder="Email" class="input" name="email" required/>
+			<input type="email" placeholder="Location" class="input" name="location" required/>
+            <input type="tel" placeholder="Phone" class="input" name="tel" required/>
+			<input type="password" placeholder="Password" class="input" name="pass1" required/>
+			<div id="letpass"></div>
+            <input type="password" placeholder="Confirm Password" class="input" name="pass2"/>
+			<div id="samepass"></div>
+			<input type="submit" class="btn" id="btn2" value="Register">
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+// trying something using SASS: Syntactically Awesome Stylesheet
+$name: blue;
+.header{
+    background: var($name);
+}

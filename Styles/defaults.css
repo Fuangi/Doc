@@ -1,0 +1,118 @@
+/* common styles for 2 or more pages */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --sec-color: rgba(148, 148, 235, 0.8);
+    --dark-color: #333;
+    --bright-color: whitesmoke;
+    --gradient: linear-gradient(rgb(171, 202, 233), rgba(148, 148, 235, 0.8));
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+    width: 100%;
+    overflow-x: hidden;
+}
+/* Header */
+.header{
+    background: linear-gradient(rgba(38, 147, 241, 0.3), rgba(235, 235, 235, 0.3)), url('../images/groupOfDocs.jpg');
+    background-size: cover;
+    display: block;
+    height: 100vh;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    box-shadow: 5px 5px 15px rgb(48, 47, 47);
+    /* height: 570px; */
+}
+.navLinks{
+    padding: 1px 1px;
+    /* background-color: var(--sec-color); */
+    height: 50px;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+.nav-links{
+    display: inline;
+    text-align: right;
+    margin-top: 2px;
+    height: 50px;
+    width: 800px;
+    padding-top: 2px;
+}
+.navLinks a{
+    text-decoration: none;
+    color: #fff;
+}
+.MenuItem li{
+    display: inline;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-right:0;
+}
+.MenuItem li a.current{
+    color: rgb(38, 147, 241);
+}
+.MenuItem a:visited{
+    color: rgb(255, 255, 255);
+}
+.nav-links a:hover{
+    color: rgb(252, 236, 236);
+}
+.nav-links a:active{
+    color: rgb(255, 255, 255);
+}
+
+.objectives{
+    padding: 10px;
+    text-align: center;
+}
+.objs{
+    width: 1000px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* CONTACT */
+
+.contact{
+    columns: 2 100px;
+    width: 700px;
+    margin: 40px auto;
+    padding: 1rem;
+    text-align: center;
+}
+.follow h2, .chat h2{
+    font: 1.5rem cursive;
+    font-weight: bold;
+}
+
+/* MEDIA QUERY FOR DIFFERENT SCREEN RATIOS */
+
+@media screen and (max-width: 600px){
+    body{
+        overflow-x: hidden;
+    }
+    .objs{
+        width: 100%;
+        text-align: left;
+        margin: 10px auto;
+    }
+    .objs h2{
+        text-align: center;
+    }
+    .contact{
+        /* columns: 1; */
+        width: 100%;
+        margin: 10px;
+    }
+}
