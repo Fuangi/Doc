@@ -22,21 +22,18 @@ if(isset($_POST["submit"])){
         
         $patient_id = $pat_result["pat_id"];
         $doctor_id = $doc_result["doc_id"];
-/* 
-        print_r($pat_result);
-        echo "<h1> </h1>";
-        print_r($doc_result);
-        echo "<br>". $patient_id;
-        echo "<br>". $doctor_id; */
+        if(!$doc_result || !$pat_result){
+            die("User not found please check the email well".$conn->error);
+        }else{
+         $insert = "INSERT INTO appointment(doc_id, pat_id, app_date, app_time, app_email, app_description) VALUES ('$doctor_id', '$patient_id', '$date', '$time', '$email', '$description')";
 
-        $insert = "INSERT INTO appointment(doc_id, pat_id, app_date, app_time, app_email, app_description) VALUES ('$doctor_id', '$patient_id', '$date', '$time', '$email', '$description')";
-
-        $query_insert = $conn->query($insert);
-            if($query_insert){
-                echo "<h1. Appointment booked successfully </h1>";
-            }else{
-                die($conn->error);
+            $query_insert = $conn->query($insert);
+                if($query_insert){
+                    echo "<h1> Appointment booked successfully </h1>";
+                }else{
+                    die($conn->error);
             }
+        }
     }else{
         echo "Please fill out the form";
     }
