@@ -47,7 +47,7 @@ if($select_user_query){
             <li> <a href="../index.html"> Home</a></li>
             <!-- <li><a href="../forums.html" target="frame"> Forums </a></li> -->
             <li><a href="../centers.html" target="frame"> Doctors</a></li>
-            <li><a href="../appoint.html" target="frame"> Appointments </a></li>
+            <li><a href="../appoint.php" target="frame"> Appointments </a></li>
           </ul>
         </div>
     </section>

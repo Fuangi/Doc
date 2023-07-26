@@ -2,6 +2,7 @@
 include "PHP/connect.php";
 session_start();
 $select = "SELECT * FROM doctor";
+
 $select_query = $conn->query($select);
 $data = $select_query->fetch_assoc();
 $patients = "SELECT * FROM patient";

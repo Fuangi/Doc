@@ -30,12 +30,13 @@ if(isset($_POST["submit"])){
             $query_insert = $conn->query($insert);
                 if($query_insert){
                     echo "<h1> Appointment booked successfully </h1>";
+                    header("refresh: 2 url:../dashboards/patients.php");
                 }else{
                     die($conn->error);
             }
         }
     }else{
-        echo "Please fill out the form";
+        echo "Please fill out everything in the form";
     }
 }else{
     echo "Please click the submit button";

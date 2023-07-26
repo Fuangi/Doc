@@ -32,7 +32,7 @@ session_start();
         <div class="menu">
           <ul>
             <li> <a href="../index.html"> Home</a></li>
-            <li><a href="../forums.html" target="frame"> Forums </a></li>
+            <!-- <li><a href="../forums.html" target="frame"> Forums </a></li> -->
             <li><a href="../doctors.html" target="frame"> Schedule</a></li>
             <li><a href="../appoints.html" target="frame"> Appointments </a></li>
           </ul>
